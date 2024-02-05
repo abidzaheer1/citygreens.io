@@ -122,8 +122,8 @@ export default function Header (){
                                                     </button>
                                                 ) : (
                                                     
-                                                    <Link href={item.path}>
-                                                    <a className="text-white hover:text-gray-600">{item.title}</a>
+                                                    <Link  className="text-white hover:text-gray-600" href={item.path}>
+                                                   {item.title}
                                                   </Link>
                                                   
                                                        
