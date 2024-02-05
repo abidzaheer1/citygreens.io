@@ -34,8 +34,13 @@ function ScrollSection() {
     const pin = setupAnimation();
 
     // Return a cleanup function
-    return () => pin.kill();
+    return () => {
+      if (pin) {
+        pin.kill();
+      }
+    };
   }, []);
+
 
   // Array of specific image URLs
   const imageUrls = [
