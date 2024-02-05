@@ -10,25 +10,31 @@ function ScrollSection() {
   const triggerRef = useRef(null);
 
   useEffect(() => {
-    const pin = gsap.fromTo(
-      sectionRef.current,
-      { translateX: 0 },
-      {
-        translateX: "-300vw",
-        ease: "none",
-        duration: 1,
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          start: "top top",
-          end: "2000 top",
-          scrub: 0.6,
-          pin: true,
-        },
-      }
-    );
+    // Create a function for cleanup
+    const setupAnimation = () => {
+      return gsap.fromTo(
+        sectionRef.current,
+        { translateX: 0 },
+        {
+          translateX: "-300vw",
+          ease: "none",
+          duration: 1,
+          scrollTrigger: {
+            trigger: triggerRef.current,
+            start: "top top",
+            end: "2000 top",
+            scrub: 0.6,
+            pin: true,
+          },
+        }
+      );
+    };
 
+    // Call the setup function
+    const pin = setupAnimation();
+
+    // Return a cleanup function
     return () => pin.kill();
-
   }, []);
 
   // Array of specific image URLs
