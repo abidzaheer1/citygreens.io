@@ -134,7 +134,7 @@ export default function Header (){
                                                 item.isDrapdown && drapdownState.idx == idx && drapdownState.isActive ? (
                                                     <div className="mt-6 inset-x-0 bg-gray-300 top-20 w-full md:absolute md:border-y md:shadow-md md:mt-0">
                                                         <ul className='max-w-screen-xl mx-auto grid items-center gap-6 md:p-8 md:grid-cols-2 lg:grid-cols-3'>
-                                                            {item?.navs.map((dropdownItem, idx) => (
+                                                        {item?.navs?.map((dropdownItem, idx) => (
                                                                 <li key={idx}>
                                                                     <p className="text-indigo-600 text-sm">{dropdownItem.label}</p>
                                                                     <ul className='mt-5 space-y-6'>
