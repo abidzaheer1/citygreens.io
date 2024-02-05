@@ -1,5 +1,5 @@
 'use client'
-export default () => {
+export default function Footer () {
 
     const footerNavs = [
         {
