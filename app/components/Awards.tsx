@@ -1,5 +1,6 @@
 import React from 'react';
 import gsap from 'gsap';
+import Image from 'next/image';  // Import Image from next/image
 
 function Awards() {
     var tl = gsap.timeline();
@@ -55,7 +56,7 @@ function Awards() {
                         {stats.map((item, idx) => (
                             <li key={idx} className="sm:max-w-[15rem]">
                                 <div className="grid justify-items-center">
-                                    <img
+                                    <Image
                                         src={item.src}
                                         width={150}
                                         height={70}
