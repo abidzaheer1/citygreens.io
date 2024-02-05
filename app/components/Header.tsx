@@ -56,8 +56,8 @@ const dropdownNavs = [
 
 export default function Header (){
 
-    const [state, setState] = useState(false)
-    const [drapdownState, setDrapdownState] = useState({ isActive: false, idx: null })
+    const [state, setState] = useState(false);
+    const [drapdownState, setDrapdownState] = useState<{ isActive: boolean; idx: number | null }>({ isActive: false, idx: null });
 
     // Replace # paths with your paths
     const navigation = [
@@ -76,7 +76,7 @@ export default function Header (){
             }
         };
     }, []);
-    
+
     
 
     return (
