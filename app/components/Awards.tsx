@@ -73,7 +73,7 @@ function Awards() {
             </div>
             <div className="pt-20 max-w-2xl xl:mx-auto xl:text-center">
                 <p className="mt-3 text-gray-300 px-5">
-                    "Making India proud by creating world-class Sustainable Agricultural Technologies; creating significant impact for the farmers and the environment."
+                    &aposMaking India proud by creating world-class Sustainable Agricultural Technologies; creating significant impact for the farmers and the environment.&apos
                 </p>
                 <p className='text-white px-5'>
                     *The Financial Express, Aug 2022
