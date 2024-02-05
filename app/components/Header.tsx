@@ -54,7 +54,7 @@ const dropdownNavs = [
     }
 ]
 
-export default () => {
+export default function header (){
 
     const [state, setState] = useState(false)
     const [drapdownState, setDrapdownState] = useState({ isActive: false, idx: null })
