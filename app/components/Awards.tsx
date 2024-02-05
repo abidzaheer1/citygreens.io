@@ -44,17 +44,17 @@ function Awards() {
             <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-2xl xl:mx-auto xl:text-center">
                     <h3 className="text-white text-3xl font-semibold sm:text-4xl ex">
-                        CityGreens is India's most awarded Agriculture Technology startup*
+                        CityGreens is India&apos;s most awarded Agriculture Technology startup*
                     </h3>
-                    <p className="mt-3 text-gray-300 ">
-                        We are proud to share that CityGreens has been awarded a collective grant award of 6.5 Million by the Ministry of Agriculture, Ministry of Science & Technology, and Ministry of Housing & Urban Affairs.
+                    <p className="mt-3 text-gray-300">
+                        We are proud to share that CityGreens has been awarded a collective grant award of 6.5 Million by the Ministry of Agriculture, Ministry of Science &amp; Technology, and Ministry of Housing &amp; Urban Affairs.
                     </p>
                 </div>
-                <div className="mt-12 ">
+                <div className="mt-12">
                     <ul className="flex-wrap gap-x-12 gap-y-10 text-center space-y-8 sm:space-y-0 sm:flex xl:justify-center">
                         {stats.map((item, idx) => (
                             <li key={idx} className="sm:max-w-[15rem]">
-                                <div className="grid justify-items-center ">
+                                <div className="grid justify-items-center">
                                     <img
                                         src={item.src}
                                         width={150}
@@ -70,11 +70,11 @@ function Awards() {
                     </ul>
                 </div>
             </div>
-            <div className="pt-20 max-w-2xl xl:mx-auto xl:text-center ">
+            <div className="pt-20 max-w-2xl xl:mx-auto xl:text-center">
                 <p className="mt-3 text-gray-300 px-5">
                     "Making India proud by creating world-class Sustainable Agricultural Technologies; creating significant impact for the farmers and the environment."
                 </p>
-                <p className=' text-white px-5'>
+                <p className='text-white px-5'>
                     *The Financial Express, Aug 2022
                 </p>
             </div>
