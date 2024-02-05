@@ -1,6 +1,6 @@
 'use client'
 import React,{useRef } from 'react'
-import useSectionAnimation from '../hooks/ScrollTrigger'
+import useSectionAnimation from '../app/hooks/ScrollTrigger'
 import gsap from 'gsap';
 
 function Hero() {
