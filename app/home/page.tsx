@@ -7,7 +7,7 @@ import GridLogo from '../components/GridLogo'
 import HorizontalScroll from '../components/HorizontalScroll'
 
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
       <HorizontalScroll/>
@@ -20,4 +20,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage
