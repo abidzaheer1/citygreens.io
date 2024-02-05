@@ -54,7 +54,7 @@ const dropdownNavs = [
     }
 ]
 
-export default function header (){
+export default function Header (){
 
     const [state, setState] = useState(false)
     const [drapdownState, setDrapdownState] = useState({ isActive: false, idx: null })
@@ -118,7 +118,10 @@ export default function header (){
                                                     </button>
                                                 ) : (
                                                     
-                                                        <Link href={item.path} className="blocktext-white hover:text-gray-600"> {item.title}</Link>
+                                                    <Link href={item.path}>
+                                                    <a className="text-white hover:text-gray-600">{item.title}</a>
+                                                  </Link>
+                                                  
                                                        
                                                     
                                                 )
