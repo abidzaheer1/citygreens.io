@@ -71,9 +71,12 @@ export default function Header (){
     useEffect(() => {
         document.onclick = (e) => {
             const target = e.target;
-            if (!target.closest(".nav-menu")) setDrapdownState({ isActive: false, idx: null });
+            if (target && !target.closest(".nav-menu")) {
+                setDrapdownState({ isActive: false, idx: null });
+            }
         };
-    }, [])
+    }, []);
+    
 
     return (
         <div className=" ">
